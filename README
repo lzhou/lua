@@ -1,1 +1,10 @@
 GNU-Autotoolize the Lua packages
+
+- How to install
+  - Change the version in configure.ac to what you want
+  - Run the following commands
+    $ autoreconf -vif
+    $ ./configure --prefix=/where/you/want/to/install
+    $ make
+    $ make check
+    $ [sudo] make install
