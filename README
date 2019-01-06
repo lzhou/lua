@@ -1,7 +1,9 @@
 GNU-Autotoolize the Lua packages
 
 - How to install
-  - Change the version in configure.ac to what you want
+  - Change the version to what you want in the following files:
+    - configure.ac  # Near the top of the file; search for AC_INIT
+    - The default is to install lua-5.3.5
   - Run the following commands
     $ autoreconf -vif
     $ ./configure --prefix=/where/you/want/to/install

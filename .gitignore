@@ -8,7 +8,7 @@
 .tar.gz
 INSTALL
 Makefile
-# Makefile.in
+Makefile.in
 RCS
 \#*#
 aclocal.m4

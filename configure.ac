@@ -1,9 +1,13 @@
 
 AC_PREREQ(2.69)
 
+dnl
 dnl Change the Lua version to whatever version you want:
-AC_INIT([lua], [5.3.5], [lua@lua.org]) dnl what's Lua's email?
+dnl
+AC_INIT([lua], [5.3.5], [zhou.lixin+lua@gmail.com]) dnl what's Lua's email?
 AC_CONFIG_AUX_DIR([build-aux])
+
+dnl You don't need change anything below.
 
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
@@ -11,7 +15,7 @@ AC_CONFIG_MACRO_DIR([build-aux])
 AM_INIT_AUTOMAKE([foreign])
 AC_PROG_LIBTOOL
 
-AC_PREFIX_DEFAULT([/usr/local/packages/${PACKAGE_NAME}-${PACKAGE_VERSION}])
+AC_PREFIX_DEFAULT([/usr/local/packages/$PACKAGE_NAME-$PACKAGE_VERSION])
 
 # Checks for programs.
 AC_PROG_CC
@@ -43,9 +47,9 @@ esac
 
 AC_CONFIG_FILES([
     Makefile
-    lua-5.3.5/Makefile
-    lua-5.3.5/src/Makefile
-    lua-5.3.5/src/luaconf.h
+    $PACKAGE_NAME-$PACKAGE_VERSION/Makefile
+    $PACKAGE_NAME-$PACKAGE_VERSION/src/Makefile
+    $PACKAGE_NAME-$PACKAGE_VERSION/src/luaconf.h
 ])
 
 AC_OUTPUT
