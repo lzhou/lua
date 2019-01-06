@@ -1,0 +1,23 @@
+*.a
+*.o
+*.so
+*~
+.DS_Store
+.deps
+.tar
+.tar.gz
+INSTALL
+Makefile
+# Makefile.in
+RCS
+\#*#
+aclocal.m4
+autom4te.cache
+build
+config.h
+config.h.in
+config.log
+config.status
+configure
+libtool
+stamp-h1
